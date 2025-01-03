@@ -1,0 +1,169 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f,#feb47b);
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #333;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff7e5f;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #ff6c4a;
+}
+
+.resultContainer{
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    color: #333;
+}
+
+#wordDescription{
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+#audioContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#audioButton{
+    padding: 10px;
+    font-size: 24px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#audioButton:hover{
+    background-color: #ff6c4a;
+
+}
+
+/* Stile per Parte del Discorso */
+.part-of-speech {
+    margin-bottom: 5px;
+    padding: 8px 8px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #ff7e5f;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Stile per Definizione */
+.definition {
+    margin-bottom: 5px;
+    padding: 6px 12px;
+    background-color: #fff;
+    color: #555;
+}
+
+/* Stile per Esempio */
+.example {
+    margin-top: 5px;
+    padding: 4px 12px;
+    font-style: italic;
+    background-color: #fdfdfd;
+    color: #666;
+}
+
+.warning {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffe4e1;
+    color: #b22222;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #b22222;
+}
